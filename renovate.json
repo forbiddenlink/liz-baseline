@@ -1,27 +1,26 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    "group:monorepos",
-    "group:recommended",
-    ":automergeMinor",
-    ":semanticCommits"
-  ],
-  "schedule": ["before 9am on monday"],
-  "minimumReleaseAge": "7 days",
+  "extends": ["config:base", "schedule:weekly"],
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "matchDepTypes": ["devDependencies"],
+      "groupName": "devDeps weekly",
       "automerge": true
     },
     {
-      "matchPackagePatterns": ["@types/*"],
-      "groupName": "type definitions",
+      "matchUpdateTypes": ["patch"],
+      "matchDepTypes": ["dependencies"],
+      "groupName": "deps patches weekly",
       "automerge": true
     },
     {
-      "matchUpdateTypes": ["major"],
-      "minimumReleaseAge": "14 days"
+      "matchUpdateTypes": ["minor"],
+      "matchDepTypes": ["dependencies"],
+      "groupName": "deps minor weekly",
+      "automerge": false
     }
-  ]
+  ],
+  "prConcurrentLimit": 3,
+  "prHourlyLimit": 0
 }
