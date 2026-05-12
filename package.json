@@ -1,0 +1,43 @@
+{
+  "name": "liz-baseline",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Liz's Day-0 Next.js template: Renovate + Sentry + OTel + Resend + Biome + vitest",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --write .",
+    "format": "biome format --write .",
+    "check": "biome check --write .",
+    "ci": "biome ci .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@sentry/nextjs": "^10.52.0",
+    "@vercel/otel": "^2.1.2",
+    "langfuse": "^3.38.6",
+    "next": "^16.2.6",
+    "posthog-node": "^4.20.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "resend": "^4.5.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.15",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.7.3",
+    "vitest": "^4.1.6"
+  }
+}

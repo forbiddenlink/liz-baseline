@@ -1,0 +1,32 @@
+# Gitleaks configuration
+# Liz's global pre-commit hook runs gitleaks - this config tunes per-repo rules.
+# Docs: https://github.com/gitleaks/gitleaks
+
+title = "liz-baseline gitleaks config"
+
+[extend]
+# Inherit all default rules
+useDefault = true
+
+[allowlist]
+description = "Allowlist for false positives"
+
+paths = [
+  '''\.env\.example$''',
+  '''package-lock\.json$''',
+  '''pnpm-lock\.yaml$''',
+  '''yarn\.lock$''',
+  '''node_modules/''',
+  '''\.next/''',
+  '''dist/''',
+  '''build/'''
+]
+
+# Common safe placeholder patterns in .env.example / docs
+regexes = [
+  '''sk-(?:lf|test|live)-XXXX''',
+  '''pk-(?:lf|test|live)-XXXX''',
+  '''re_XXXX''',
+  '''phc_XXXX''',
+  '''whsec_XXXX'''
+]
