@@ -21,22 +21,22 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@sentry/nextjs": "^10.63.0",
+    "@sentry/nextjs": "^10.65.0",
     "@vercel/otel": "^2.1.2",
     "langfuse": "^3.38.6",
     "next": "^16.2.10",
-    "posthog-node": "^5.39.4",
+    "posthog-node": "^5.41.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "resend": "^6.17.1"
+    "resend": "^6.17.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.3",
-    "@tailwindcss/postcss": "^4.3.2",
+    "@biomejs/biome": "^2.5.4",
+    "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^25.9.5",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
-    "tailwindcss": "^4.3.2",
+    "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3",
     "vitest": "^4.1.10"
   }
