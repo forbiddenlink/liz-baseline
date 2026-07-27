@@ -24,7 +24,7 @@
     "@sentry/nextjs": "^10.65.0",
     "@vercel/otel": "^2.1.2",
     "langfuse": "^3.38.6",
-    "next": "^16.2.10",
+    "next": "^16.2.11",
     "posthog-node": "^5.41.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
