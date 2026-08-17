@@ -1,0 +1,19 @@
+name: Shared CI Proof
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  nextjs:
+    name: Shared Next.js CI
+    uses: forbiddenlink/.github/.github/workflows/ci-nextjs.yml@e087cd9a73ffd73e4a70d2c63123a52fdc447e0c
+    with:
+      node-version: "20"
+
+  security:
+    name: Shared Security
+    uses: forbiddenlink/.github/.github/workflows/security.yml@e087cd9a73ffd73e4a70d2c63123a52fdc447e0c
