@@ -15,11 +15,11 @@ export function register() {
   }
 }
 
-export async function onRequestError(
-  err: unknown,
-  request: Request,
-  context: { routerKind: string; routePath: string; routeType: string },
-) {
+export const onRequestError: import("next").Instrumentation.onRequestError = async (
+  err,
+  request,
+  context,
+) => {
   const Sentry = await import("@sentry/nextjs");
   Sentry.captureRequestError(err, request, context);
-}
+};
