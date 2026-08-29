@@ -3,25 +3,16 @@
   "automationLevel": "manual",
   "confidentialContext": "none",
   "context": "tooling",
-  "hosting": [
-    "vercel"
-  ],
+  "hosting": ["vercel"],
   "kind": "tool",
   "lastReviewedAt": "2026-08-27",
   "lifecycle": "active",
   "notes": "Liz's Day-0 Next.js template with Renovate, Sentry, OTel, Resend, Biome, Vitest, PostHog, and Langfuse signals. Use as the preferred starter baseline for new safe personal projects.",
-  "observability": [
-    "posthog",
-    "sentry"
-  ],
+  "observability": ["posthog", "sentry"],
   "ownerContext": "personal",
   "source": "owned",
   "surface": "internal",
-  "systems": [
-    "solo-control-tower",
-    "project-starter",
-    "observability"
-  ],
+  "systems": ["solo-control-tower", "project-starter", "observability"],
   "tags": [
     "biome",
     "langfuse",
