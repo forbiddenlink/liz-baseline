@@ -31,7 +31,7 @@
     "resend": "^6.25.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.11",
+    "@biomejs/biome": "2.5.12",
     "@tailwindcss/postcss": "4.3.3",
     "@types/node": "26.5.1",
     "@types/react": "19.3.0",
