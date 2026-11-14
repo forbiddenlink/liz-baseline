@@ -46,6 +46,7 @@
   "pnpm": {
     "overrides": {
       "fast-uri": ">=3.1.9 <4",
+      "glob@13": ">=14.0.4 <15",
       "nanoid": "^6.0.0",
       "sharp": ">=0.35.5 <1",
       "source-map-js": ">=1.2.2 <2",
