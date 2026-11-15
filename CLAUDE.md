@@ -15,7 +15,7 @@ pnpm dev
 
 - Next.js 16 (App Router), React 19, TypeScript
 - Tailwind CSS v4
-- pnpm (`packageManager` pinned to `pnpm@10.34.5`), never npm/yarn
+- pnpm (`packageManager` pinned to `pnpm@10.34.7`), never npm/yarn
 - Biome (never ESLint/Prettier)
 - Vitest for tests
 - Sentry (`@sentry/nextjs`, client/server/edge configs) + OpenTelemetry
