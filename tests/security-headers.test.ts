@@ -6,9 +6,7 @@ const byKey = (key: string) => securityHeaders().find((h) => h.key === key);
 describe("securityHeaders", () => {
   it("enforces the safe defaults", () => {
     expect(byKey("X-Content-Type-Options")?.value).toBe("nosniff");
-    expect(byKey("Referrer-Policy")?.value).toBe(
-      "strict-origin-when-cross-origin",
-    );
+    expect(byKey("Referrer-Policy")?.value).toBe("strict-origin-when-cross-origin");
     expect(byKey("X-Frame-Options")?.value).toBe("DENY");
     expect(byKey("Permissions-Policy")?.value).toContain("camera=()");
     expect(byKey("Strict-Transport-Security")?.value).toContain("max-age=");
